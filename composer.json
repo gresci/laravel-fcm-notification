@@ -1,5 +1,5 @@
 {
-  "name": "benwilkins/laravel-fcm-notification",
+  "name": "gresci/laravel-fcm-notification",
   "description": "Laravel FCM (Firebase Cloud Messaging) Notification Channel",
   "authors": [
     {
