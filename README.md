@@ -25,22 +25,17 @@ Once installed, add the service provider:
 ];
 ```
 
-Publish the config file:
-
-``` bash
-php artisan vendor:publish --provider="Benwilkins\FCM\FcmNotificationServiceProvider"
-```
-
-The following config file will be published in `config/laravel-fcm-notification.php`. Add your Firebase API Key here.
+Add your Firebase API key to your `config/services.php`:
 
 ```php
-return [
-    /*
-     * Add the Firebase API key
-     */
-    'api_key' => ''
-];
+// config/services.php
+...
+'fcm' => [
+    'api_key'  => env('FCM_API_KEY'),
+],
+...
 ```
+
 
 ## Example Usage
 
